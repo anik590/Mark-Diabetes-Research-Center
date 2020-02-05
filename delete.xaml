@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp1.delete"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="delete" Height="300" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+    <StackPanel Background="#FFBEC3B2" MouseDown="StackPanel_MouseDown">
+        <Grid Height="10" Background="#FF4C8000"/>
+        
+        <TextBlock Margin="0 25 0 0" Text="Fill the content" TextAlignment="Center" FontSize="20" FontFamily="arial black"/>
+
+        <StackPanel Orientation="Horizontal"  Margin="15 50 0 0">
+            <TextBlock FontSize="16" Text="Enter patients serial number :"/>
+            <TextBox Margin="50 0 0 0" Background="White" Height="25" Width="120" x:Name="txt_delete"/>
+        </StackPanel>
+
+
+        <Button Margin=" 0 25 0 0" Height="30" Width="100" x:Name="sub_delete" Click="Sub_delete_Click" Background="#FF3CEE65">
+            Submit
+        </Button>
+
+        <Grid Height="10" Background="#FF518000" Margin="0 102 0 0"/>
+
+    </StackPanel>
+    
+</Window>
